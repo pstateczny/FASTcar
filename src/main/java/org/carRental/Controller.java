@@ -19,16 +19,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
 
 import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+
 import java.util.stream.Collectors;
 
-@Scope("prototype")
 @org.springframework.stereotype.Controller
 public class Controller {
 
@@ -130,10 +129,17 @@ public class Controller {
         if (userContext.getPoswiadczeniaUzytkownika().isEmpty()) {
             return "redirect:/";
         }
+        if (userContext.getUserId() != null) {
+            Osoby osoba = userRepository.getOne(userContext.getUserId());
+            String role = kontaRepository.findByUser(osoba).getRola();
+            if (!role.equalsIgnoreCase("boss")){
+                return "redirect:/";
+            }
+        }
         model.addAttribute("pojazdy", pojazdRepository.findAll());
         return "carDetails";
-
     }
+
 
     @GetMapping(value = "pojazdy")
     public String pokazPojazdy(Model model) {
