@@ -1,13 +1,15 @@
 package org.carRental.model;
 
 import lombok.Data;
-import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
 //@Table(name = "pojazdy")
+@Data
+@NoArgsConstructor
 public class Pojazdy {
 
     @Id
@@ -36,8 +38,6 @@ public class Pojazdy {
     @Column(name = "miniaturka")
     private String miniaturka;
 
-    public Pojazdy() {
-    }
 
     public Pojazdy(@NotBlank(message = "Pojazdy musi posiadać markę") String marka, @NotBlank(message = "Podaj model pojazdu") String model, String moc, @NotBlank(message = "Podaj Numer Rejestracyjny") String srednieSpalanie, @NotBlank(message = "Podaj Cenę za dobę") String cenaZaDobe, String miniaturka) {
         this.marka = marka;
@@ -48,59 +48,5 @@ public class Pojazdy {
         this.miniaturka = miniaturka;
     }
 
-    public long getId() {
-        return id;
-    }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getMarka() {
-        return marka;
-    }
-
-    public void setMarka(String marka) {
-        this.marka = marka;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public String getMoc() {
-        return moc;
-    }
-
-    public void setMoc(String moc) {
-        this.moc = moc;
-    }
-
-    public String getSrednieSpalanie() {
-        return srednieSpalanie;
-    }
-
-    public void setSrednieSpalanie(String srednieSpalanie) {
-        this.srednieSpalanie = srednieSpalanie;
-    }
-
-    public String getCenaZaDobe() {
-        return cenaZaDobe;
-    }
-
-    public void setCenaZaDobe(String cenaZaDobe) {
-        this.cenaZaDobe = cenaZaDobe;
-    }
-
-    public String getMiniaturka() {
-        return miniaturka;
-    }
-
-    public void setMiniaturka(String miniaturka) {
-        this.miniaturka = miniaturka;
-    }
 }

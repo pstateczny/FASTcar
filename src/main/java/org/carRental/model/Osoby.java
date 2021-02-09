@@ -1,11 +1,17 @@
 package org.carRental.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 
 @Entity
+@Data
+@NoArgsConstructor
 //@Table(name = "REGISTRATION_USERS")
 public class Osoby {
     @Id
@@ -16,8 +22,6 @@ public class Osoby {
     private String numerDowoduOsobistego;
     private String numerTelefonu;
 
-    public Osoby() {
-    }
 
     public Osoby(String imie, String nazwisko, String numerDowoduOsobistego, String numerTelefonu) {
         this.imie = imie;
@@ -26,43 +30,5 @@ public class Osoby {
         this.numerTelefonu = numerTelefonu;
     }
 
-    public long getId() {
-        return id;
-    }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getImie() {
-        return imie;
-    }
-
-    public void setImie(String imie) {
-        this.imie = imie;
-    }
-
-    public String getNazwisko() {
-        return nazwisko;
-    }
-
-    public void setNazwisko(String nazwisko) {
-        this.nazwisko = nazwisko;
-    }
-
-    public String getNumerDowoduOsobistego() {
-        return numerDowoduOsobistego;
-    }
-
-    public void setNumerDowoduOsobistego(String numerDowoduOsobistego) {
-        this.numerDowoduOsobistego = numerDowoduOsobistego;
-    }
-
-    public String getNumerTelefonu() {
-        return numerTelefonu;
-    }
-
-    public void setNumerTelefonu(String numerTelefonu) {
-        this.numerTelefonu = numerTelefonu;
-    }
 }

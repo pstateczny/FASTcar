@@ -1,12 +1,14 @@
 package org.carRental.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 
 
 @Entity
+@Data
+@NoArgsConstructor
 public class Konta {
 
     @Id
@@ -23,28 +25,10 @@ public class Konta {
     @Column(name = "rola")
     private String rola;
 
-    public Konta() {
-    }
-
     public Konta(Osoby osoba, String daneLogowania, String rola) {
         this.osoba = osoba;
         this.daneLogowania = daneLogowania;
         this.rola = rola;
     }
 
-    public Osoby getOsoba() {
-        return osoba;
-    }
-
-    public void setOsoba(Osoby osoba) {
-        this.osoba = osoba;
-    }
-
-    public String getDaneLogowania() {
-        return daneLogowania;
-    }
-
-    public String getRola() {
-        return rola;
-    }
 }

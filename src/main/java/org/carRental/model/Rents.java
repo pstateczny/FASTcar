@@ -1,10 +1,15 @@
 package org.carRental.model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "wynajmy")
+@Data
+@NoArgsConstructor
 //@RequiredArgsConstructor()
 public class Rents {
 
@@ -29,22 +34,5 @@ public class Rents {
         this.iloscDniWynajmu = iloscDniWynajmu;
     }
 
-    public Rents() {
-    }
 
-    public long getId() {
-        return id;
-    }
-
-    public Pojazdy getPojazd() {
-        return pojazd;
-    }
-
-    public Osoby getKlient() {
-        return klient;
-    }
-
-    public LocalDate getIloscDniWynajmu() {
-        return iloscDniWynajmu;
-    }
 }
