@@ -2,13 +2,9 @@
 -- Table klienci
 -- -----------------------------------------------------
 INSERT INTO osoby (id, imie, nazwisko, numer_dowodu_osobistego, numer_telefonu)
-VALUES ('1', 'Michał', 'Kamionka', 'AWK585987', '566687451');
+VALUES ('1', 'Pawel', 'Stateczny', 'AWK585987', '566687451');
 INSERT INTO osoby (id, imie, nazwisko, numer_dowodu_osobistego, numer_telefonu)
-VALUES ('2', 'Karolina', 'Małocha', 'AWK743246', '833445551');
-INSERT INTO osoby (id, imie, nazwisko, numer_dowodu_osobistego, numer_telefonu)
-VALUES ('3', 'Robert', 'Kowalski', 'AWK885987', '766687451');
-INSERT INTO osoby (id, imie, nazwisko, numer_dowodu_osobistego, numer_telefonu)
-VALUES ('4', 'Ewelina', 'Morawska', 'AWK457897', '678697451');
+VALUES ('2', 'Kacper', 'Kus', 'AWP743246', '833445551');
 
 
 -- -----------------------------------------------------
@@ -17,46 +13,46 @@ VALUES ('4', 'Ewelina', 'Morawska', 'AWK457897', '678697451');
 
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('1', 'Honda', 'Integra TYPE R', '207', '12', '150',
-        'https://img.gta5-mods.com/q95/images/honda-integra-dc2-handling/4a2268-timg%20(2).jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/integra.jpg?alt=media&token=33c170ce-571f-4453-aaf8-ea0b54a0c594');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('2', 'Renault', 'Clio', '110', '8', '90',
-        'https://upload.wikimedia.org/wikipedia/commons/f/f0/2019_Renault_Clio_Iconic_TCE_1.0_Front.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/cllio.jpg?alt=media&token=340c92bd-70f1-4c2a-9780-b94a53ea6230');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('3', 'Ford', 'Mustang', '375', '15', '280',
-        'https://motohigh.pl/wp-content/uploads/2020/04/Ford-Mustang_GT-2018-1024-0d.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/Ford-Mustang.jpg?alt=media&token=b7f110a4-b9dc-4891-bce9-98aac396fd47');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('4', 'Ford', 'Focus RS', '350', '16', '250',
-        'https://katalogmarzen.pl/img/products/1/2019_04/ford-focus-rs-1-1.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/ford-focus.jpg?alt=media&token=75766c07-2714-438b-9ec5-1ac00ebd3492');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('5', 'Ford', 'Galaxy', '150', '7', '120',
-        'https://d-mf.ppstatic.pl/art/cy/n6/daf52dk44wkwwskkg0400/ford-galaxy-4.1200.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/ford-galaxy.jpg?alt=media&token=ab16375d-68a4-4795-a8b5-fb213f24a235');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('6', 'Fiat', 'Multipla', '170', '10', '110',
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Fiat_Multipla_front_20080825.jpg/800px-Fiat_Multipla_front_20080825.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/multipla.jpg?alt=media&token=d02455fd-5a71-4358-a1f2-a1470221b08a');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('7', 'Mercedes', 'C220', '170', '9', '130',
-        'https://media.autoexpress.co.uk/image/private/s--ctJBoyrv--/v1579703511/autoexpress/2018/09/1_.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/mercedes.jpg?alt=media&token=eaf5423f-6987-40b5-b3eb-655a2020002c');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('8', 'Renault', 'Twizy', '7', '=|=', '70',
-        'https://upload.wikimedia.org/wikipedia/commons/6/63/Eng_Renault_Twizy_ZE.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/twizy.jpg?alt=media&token=a24c4b82-5100-431b-b17e-9bfd36efbae6');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('9', 'Seat', 'Leon cupra', '225', '12', '150',
-        'https://mklr.pl/uimages/services/motokiller/i18n/pl_PL/201409/1409830044_by_Ivan303.jpg?1409862532');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/leon.jpg?alt=media&token=0a4d42ac-e8e5-4f14-9e6b-76b80e131145');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('10', 'Audi', 'A4', '220', '11', '200',
-        'https://i.wpimg.pl/985x0/m.autokult.pl/audi-a4-to-c7b33837cde1c592379b2.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/audi.jpg?alt=media&token=a4763abb-8968-4c4d-b959-fb6846851df5');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('11', 'Toyota', 'AE 86 trueno', '130', '10', '400',
-        'https://wrc.net.pl/app/uploads/2019/02/sprinter-trueno.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/toyota.jpg?alt=media&token=8a6687b5-fec9-4680-8ffe-c4ad015f1b3d');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('12', 'Volkswagen', 'Transporter', '150', '9', '170',
-        'https://i.wpimg.pl/730x0/m.autokult.pl/volkswagen-transporter-t-aa9a430.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/volkswagen-transporter.jpg?alt=media&token=37c509f3-8598-44f1-ace7-b9cb9cab39ea');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('13', 'Mazda', 'RX8', '231', '17', '185',
-        'https://www.autocentrum.pl/ac-file/article/5dcd343d583a0f4d752b9a96.jpg');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/mazda.jpg?alt=media&token=b006678d-1923-4322-a743-cfd8b6813641');
 INSERT INTO pojazdy (id, marka, model, moc, srednie_spalanie, cena_za_dobe, miniaturka)
 VALUES ('14', 'Honda', 'CRX', '150', '11', '150',
-        'https://ocdn.eu/pulscms-transforms/1/HEfk9kpTURBXy8yMWI2OGY4MmE5MzczNmRkMTY0NTY3M2ExZjRlY2M5Mi5qcGeSlQLNAaQAwsOVAgDNARjCw4GhMAE');
+        'https://firebasestorage.googleapis.com/v0/b/fast-car-app.appspot.com/o/hondacrz.jpeg?alt=media&token=da1485b8-6727-4c6c-a7a2-de632d290ad5');
 
 
 -- -----------------------------------------------------
@@ -72,6 +68,6 @@ VALUES ('14', 'Honda', 'CRX', '150', '11', '150',
 -- Table konta
 -- -----------------------------------------------------
 INSERT INTO konta (id, id_osoby, dane_logowania, rola)
-VALUES ('1', '1', 'bWljaGFsOmthbWlvbmth', 'BOSS');
+VALUES ('1', '1', 'cGF3ZWw6c3RhdGVjem55', 'BOSS');
 INSERT INTO konta (id, id_osoby, dane_logowania, rola)
-VALUES ('2', '2', 'a2Fyb2xpbmE6bWFsb2NoYQ==', 'CLIENT');
+VALUES ('2', '2', 'a2FjcGVyOmt1cw==', 'CLIENT');
